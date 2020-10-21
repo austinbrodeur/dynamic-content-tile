@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+}
+
+.content-wrapper {
+    padding: 2rem 3rem 1rem 3rem; /* this should be replaced with something more dynamic */
+    margin: auto;
+}
+
+.content-box {
+    margin: auto;
+    display: grid;
+    max-width: 700px;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 1rem;
+
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+
+    border-radius: 25px 25px 25px 25px;
+    -moz-border-radius: 25px 25px 25px 25px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+    border: 0px solid #000000;
+    
+    transition: 0.3s ease;
+}
+
+.content-box:hover {
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.2);
+}
+
+.title {
+    grid-column: 1/3;
+}
+
+.text-content {
+    grid-column: 1/3;
+}
+
+#image-content {
+    grid-column: 1/3;
+}
+
+#text-title {
+    padding-bottom: 1rem;
+}
