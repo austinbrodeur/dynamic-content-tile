@@ -11,9 +11,10 @@
 <body>
 
     <div class="content-wrapper">
-        <div class="content-box expand-box">
+        <div id="expand-box1" class="content-box expand-box" onclick="toggleContent('expand-box-content1', 'fa-angle-down1')">
             <h1 id="expand-title" class="fit title">Expand Tile</h1>
-            <i class="fas fa-angle-down"></i>
+            <p id="expand-box-content1" class="fit expand-box-content text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia molestias ab, cupiditate nostrum consectetur doloremque suscipit optio earum, est assumenda accusamus dignissimos dolorem autem beatae fuga reprehenderit commodi harum tempore!</p>
+            <i id="fa-angle-down1" class="fas fa-angle-down"></i>
         </div>
     </div>
 
@@ -136,6 +137,6 @@
         $(".text-content").fitText(4, { minFontSize: '15px' });
         $(".title").fitText(2, { minFontSize: '25px' });
     </script>
-    <script src="onclick.js"></script>
+    <script src="logic.js"></script>
 </body>
 </html>
