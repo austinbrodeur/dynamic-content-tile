@@ -29,7 +29,6 @@
     border: 0px solid #000000;
     
     transition: 0.3s ease;
-    transition: .5s ease;
 }
 
 .content-box:hover {
