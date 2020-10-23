@@ -1,5 +1,5 @@
-document.getElementById("expand-box1").addEventListener("click", function(){ toggleContent("expand-box-content1", "fa-angle-down1"); });
-
+document.getElementById("expand-box1").addEventListener("click", function(){ toggleContent("expand-box-content1", "expand-arrow1"); });
+document.getElementById("flip-container").addEventListener("click", function() { flipCard() });
 
 function toggleContent(elementId, arrowId) {
     const toggleElement = document.getElementById(elementId);
@@ -9,14 +9,18 @@ function toggleContent(elementId, arrowId) {
         toggleElement.classList.add("content-showing");
         toggleElement.classList.remove("content-hidden");
 
-        arrowElement.classList.remove("content-showing");
-        arrowElement.classList.add("content-hidden");
+        arrowElement.classList.remove("fa-angle-down");
+        arrowElement.classList.add("fa-angle-up");
     }
     else {
         toggleElement.classList.remove("content-showing");
         toggleElement.classList.add("content-hidden");
 
-        arrowElement.classList.add("content-showing");
-        arrowElement.classList.remove("content-hidden");
+        arrowElement.classList.remove("fa-angle-up");
+        arrowElement.classList.add("fa-angle-down");
     }
+}
+
+function flipCard() {
+    document.getElementById("flip-container").classList.toggle("flip");
 }
