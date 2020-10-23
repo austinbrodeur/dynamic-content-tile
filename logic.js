@@ -1,5 +1,5 @@
 document.getElementById("expand-box1").addEventListener("click", function(){ toggleContent("expand-box-content1", "expand-arrow1"); });
-document.getElementById("flip-container").addEventListener("click", function() { flipCard() });
+document.getElementById("flip-content-box1").addEventListener("click", function() { flipCard() });
 
 function toggleContent(elementId, arrowId) {
     const toggleElement = document.getElementById(elementId);
@@ -22,5 +22,5 @@ function toggleContent(elementId, arrowId) {
 }
 
 function flipCard() {
-    document.getElementById("flip-container").classList.toggle("flip");
+    document.getElementById("flip-content-box").classList.toggle("flip");
 }
